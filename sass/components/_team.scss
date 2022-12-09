@@ -1,0 +1,88 @@
+.team {
+  background-color: var(--eighth-color);
+  padding: var(--specific-ident) 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    background-color: var(--fourth-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px var(--seventh-color),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__item:not(:first-child) {
+    margin-left: var(--specific-ident-fifth);
+  }
+
+  &__img {
+    margin-bottom: var(--specific-ident-fifth);
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: calc(16 / 19);
+    letter-spacing: 0.03em;
+    color: var(--third-color);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.social {
+  display: flex;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--sixth-color);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover {
+    background-color: var(--second-color);
+  }
+
+  &__link:focus {
+    background-color: var(--second-color);
+  }
+
+  &__link:hover .social__icon {
+    fill: var(--fourth-color);
+  }
+
+  &__link:focus .social__icon {
+    fill: var(--fourth-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+    display: flex;
+    justify-content: flex-end;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

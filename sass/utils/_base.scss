@@ -1,0 +1,36 @@
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family-first);
+  color: var(--main-color);
+  background-color: var(--fourth-color);
+}
+
+.container {
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

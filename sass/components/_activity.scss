@@ -1,0 +1,23 @@
+.activity {
+  padding-bottom: var(--specific-ident);
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: var(--specific-ident-fifth);
+  }
+
+  &__thumb {
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+  }
+}

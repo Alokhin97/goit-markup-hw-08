@@ -1,0 +1,93 @@
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+  margin-bottom: var(--specific-ident-third);
+  max-width: 696px;
+}
+
+.peculiarities__paragraph-title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.activity__title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--specific-ident-second);
+}
+
+.team__title {
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--specific-ident-second);
+}
+
+.team__name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.cards-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--specific-ident-fourth);
+  color: var(--main-color);
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  display: flex;
+  padding-left: 453px;
+}
+
+.page-footer__title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+  margin-bottom: 20px;
+}
+
+.activity__thumb > .activity__card-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

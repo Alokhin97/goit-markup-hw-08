@@ -1,0 +1,139 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover {
+    color: var(--second-color);
+  }
+
+  &__item:not(:first-child) {
+    margin-left: var(--specific-ident-second);
+  }
+
+  &__logo {
+    font-family: var(--font-family-second);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+    color: var(--second-color);
+
+    @media screen and (min-width: 1200px) {
+      font-family: 24px;
+      line-height: calc(31 / 26);
+      margin-right: 93px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+  }
+}
+
+.contakts {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    stroke: var(--second-color);
+    color: var(--second-color);
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+  }
+
+  &__item:not(:first-child) {
+    margin-left: var(--specific-ident-second);
+  }
+}
+
+.link.current {
+  color: var(--second-color);
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 48px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+  }
+}
+
+.link.current-second {
+  color: var(--second-color);
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 78px;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    background: var(--second-color);
+    border-radius: 2px;
+  }
+}
+
+.colortext-logo {
+  color: var(--fifth-color);
+}
