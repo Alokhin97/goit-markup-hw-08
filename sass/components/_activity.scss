@@ -1,5 +1,9 @@
 .activity {
-  padding-bottom: var(--specific-ident);
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: var(--specific-ident);
+  }
 
   &__list {
     display: flex;

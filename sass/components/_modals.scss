@@ -13,7 +13,7 @@
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -24,6 +24,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 
   &__input {
     width: 100%;
