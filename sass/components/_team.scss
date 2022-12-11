@@ -1,9 +1,15 @@
 .team {
+  padding: 60px 0;
   background-color: var(--eighth-color);
-  padding: var(--specific-ident) 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: var(--specific-ident) 0;
+  }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__item {

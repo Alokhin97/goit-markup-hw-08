@@ -18,21 +18,42 @@
 
     @media screen and (min-width: 1200px) {
       display: flex;
+      flex-wrap: nowrap;
     }
   }
 
   &__item {
     margin-bottom: var(--specific-ident-fifth);
 
-    @media screen and(min-width:1200px) {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
       margin-bottom: 0;
     }
   }
 
   &__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: var(--specific-ident-fifth);
+    }
+  }
+
+  &__item:nth-child(n + 3) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item:nth-child(2n + 2) {
     @media screen and (min-width: 768px) {
       margin-left: var(--specific-ident-fifth);
     }
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
   }
 
   &__link {
