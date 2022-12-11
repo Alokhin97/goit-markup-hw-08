@@ -1,13 +1,22 @@
 .сlients {
-  padding: var(--specific-ident) 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: var(--specific-ident) 0;
+  }
 }
 
 .clients__list {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--specific-ident-second);
+  margin-top: var(--specific-ident-fifth);
   margin-bottom: 0;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-top: var(--specific-ident-second);
+  }
 
   .clients__link {
     width: 100%;
@@ -41,11 +50,17 @@
 }
 
 .clients__item {
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
+  width: calc((100% - 30px) / 3);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 4);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+  }
 
   &:not(:last-child) {
     margin-right: 30px;
