@@ -144,6 +144,7 @@
                     ./images/activity/img_370.jpg 370w,
                     ./images/activity/img_740.jpg 740w
                   "
+                  sizes="(min-width: 1200px) 370px"
                   src="./images/box-1.jpg"
                   alt="Людина працює за ПК"
                   width="370"
@@ -160,6 +161,7 @@
                     ./images/activity/img_370-1.jpg 370w,
                     ./images/activity/img_740-1.jpg 740w
                   "
+                  sizes="(min-width: 1200px) 370px"
                   src="./images/box-2.jpg"
                   alt="Людина працює за телефоном і ПК"
                   width="370"
@@ -176,6 +178,7 @@
                     ./images/activity/img_370-2.jpg 370w,
                     ./images/activity/img_740-2.jpg 740w
                   "
+                  sizes="(min-width: 1200px) 370px"
                   src="./images/box-3.jpg"
                   alt="Людина працює за планшетом"
                   width="370"
@@ -503,10 +506,14 @@
                   placeholder="E-mail"
                 />
                 <button type="submit" class="page-footer__button">
-                  Підписатися</button
-                ><svg class="page-footer__telegram-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-telegram"></use>
-                </svg>
+                  Підписатися<svg
+                    class="page-footer__telegram-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </button>
               </div>
             </form>
           </div>
@@ -521,7 +528,7 @@
           </svg>
         </button>
         <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
-        <form>
+        <form class="modal__form">
           <div class="modal__container">
             <label for="user-name" class="modal__label">Ім'я</label>
             <div class="modal__wrapper">
@@ -585,12 +592,13 @@
               <span class="modal__icon-wrapper">
                 <svg class="modal__agree-icon" width="11" height="8">
                   <use href="./images/icons.svg#icon-check-mark"></use>
-                </svg>
-              </span>
-              Погоджуюся з розсилкою та приймаю &nbsp;<a
-                href=""
-                class="modal__link"
-                >Умови договору</a
+                </svg> </span
+              ><span
+                >Погоджуюся з розсилкою та приймаю&nbsp;<a
+                  href=""
+                  class="modal__link"
+                  >Умови договору</a
+                ></span
               ></label
             >
           </div>
@@ -609,7 +617,7 @@
           <a href="" class="mobile-menu-link link">Студія</a>
         </li>
         <li class="mobile-menu-item">
-          <a href="" class="mobile-menu-link link">Портфоліо</a>
+          <a href="portfolio.html" class="mobile-menu-link link">Портфоліо</a>
         </li>
         <li class="mobile-menu-item">
           <a href="" class="mobile-menu-link link">Контакти</a>

@@ -64,18 +64,14 @@
   }
 
   &:nth-child(2n + 1) {
-    margin-right: var(--specific-ident-fifth);
-
-    @media screen and (min-width: 768px) {
-      margin-right: 0;
+    @media screen and (max-width: 767px) {
+      margin-right: var(--specific-ident-fifth);
     }
   }
 
   &:nth-child(-n + 4) {
-    margin-bottom: var(--specific-ident-fifth);
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-bottom: var(--specific-ident-fifth);
     }
   }
 

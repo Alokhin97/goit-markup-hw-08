@@ -13,24 +13,19 @@
   &__list {
     @media screen and (min-width: 768px) {
       display: flex;
-      flex-wrap: wrap;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      flex-wrap: nowrap;
+      @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+      }
     }
   }
 
   &__item {
-    margin-bottom: var(--specific-ident-fifth);
+    @media screen and (max-width: 1199px) {
+      margin-bottom: var(--specific-ident-fifth);
+    }
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px) / 2);
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
     }
   }
 

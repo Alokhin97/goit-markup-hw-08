@@ -29,6 +29,12 @@
     width: 528px;
   }
 
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
   &__input {
     width: 100%;
     height: 40px;
@@ -88,8 +94,8 @@
     font-weight: 400;
     font-size: 12px;
     line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
     color: var(--third-color);
+    letter-spacing: 0.03em;
   }
 
   &__icon {
@@ -124,10 +130,15 @@
     align-items: center;
     justify-content: center;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--third-color);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
   }
 
   &__checkbox-agree .modal__icon-wrapper {
